@@ -1,0 +1,14 @@
+name: "Lab 00"
+on: push
+env:
+    MY_VARIABLE: Hello, GitHub Actions!
+jobs:
+    say-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print variable
+              run: echo $MY_VARIABLE
+            - name: Print secret
+              env:
+                DEMO_SECRET: ${{ secrets.DEMO_SECRET }}
+              run: echo $DEMO_SECRET
