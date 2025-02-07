@@ -1,0 +1,8 @@
+name: "Lab 00"
+on: push
+jobs:
+    say-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Say hello to the world
+              run: echo Hello, World!
