@@ -1,11 +1,11 @@
 name: "Lab 02"
 on: push
-env:
-    MY_VARIABLE: Hello, GitHub Actions!
 jobs:
-    say-hello:
+    build-app:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout
+              uses: actions/checkout@v4
             - id: build-dotnet
               uses: ./.github/actions/build-dotnet-app
               with:
