@@ -7,6 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - id: needed
-              uses: actions/build-dotnet-app
+              uses: wjr-/ci-security/build-dotnet-app@main
               with:
                 folder-path: app/uptodate-app
