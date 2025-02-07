@@ -6,7 +6,7 @@ jobs:
     say-hello:
         runs-on: ubuntu-latest
         steps:
-            - id: needed
+            - id: build-dotnet
               uses: ./.github/actions/build-dotnet-app
               with:
-                folder-path: app/uptodate-app
+                folder-path: apps/uptodate-app
