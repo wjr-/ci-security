@@ -1,0 +1,12 @@
+name: "Lab 02"
+on: push
+env:
+    MY_VARIABLE: Hello, GitHub Actions!
+jobs:
+    say-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - id: needed
+              uses: actions/build-dotnet-app
+              with:
+                folder-path: app/uptodate-app
